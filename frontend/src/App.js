@@ -1,54 +1,26 @@
-import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react';
+import Navigator from './components/Navigator';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
-  const [message, setMessage] = useState();
-  useEffect(() => {
-    fetch("/api/")
-      .then(res => res.json())
-      .then(res => setMessage(res.message))
-      .catch(console.error);
-  }, [setMessage]);
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     {/* <img src={logo} className="App-logo" alt="logo" /> */}
-    //     <p>{message || "Loading..."}</p>
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    //   some other text
-    // </div>
-
-    /* 
-    * Navigator component
-    *   has logo which is a link to home page
-    *   "services" link
-    *   "about us" link
-    *   "contact us" link
-    */
-    <div className="navbar">
-      <div className="Navigator__logo">
-        <a href="/">
-          <img src={logo} alt="logo" />
-        </a>
-        <a href="/home">Home</a>
-        <a href="/services">Services</a>
-        <a href="/about">About Us</a>
-        <a href="/contact">Contact Us</a>
+    <BrowserRouter>
+      <div className="App">
+        <Navigator />
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
+        </Routes>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
+
 
 export default App;
