@@ -5,9 +5,9 @@ permalink: /en/about/
 lang: en
 ---
 
-# Welcome to [Your Company Name]
+# Welcome to Red Ant Heating and Cooling Services
 
-At [Your Company Name], we're passionate about providing top-notch heating, ventilation, and air conditioning (HVAC) services to the residents of Saskatoon, Canada, and its surrounding areas. Our team of highly skilled and certified technicians is committed to delivering exceptional customer service and ensuring your home or office stays comfortable all year round.
+At Red Ant Heating and Cooling Services, we're passionate about providing top-notch heating, ventilation, and air conditioning (HVAC) services to the residents of Saskatoon, Canada, and its surrounding areas. Our team of highly skilled and certified technicians is committed to delivering exceptional customer service and ensuring your home or office stays comfortable all year round.
 
 ## Our Mission
 
@@ -28,11 +28,13 @@ We specialize in the installation, repair, and maintenance of HVAC systems and f
 - Indoor air quality solutions
 - Emergency repairs and services
 
+<!-- 
 ## Customer Testimonials
 
 *"[Insert a quote from a satisfied customer describing their positive experience with your company.]"* - **Customer Name**
 
-*"[Another quote from a customer praising your team's professionalism, expertise, and quality of service.]"* - **Customer Name**
+*"[Another quote from a customer praising your team's professionalism, expertise, and quality of service.]"* - **Customer Name** 
+-->
 
 ## Contact Us
 

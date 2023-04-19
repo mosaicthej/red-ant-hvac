@@ -12,7 +12,7 @@ If you have any questions or would like to schedule an appointment, please feel 
 **Email**: redanthvac@gmail.com
 
 <!-- Replace "YOUR_FORMSPREE_ENDPOINT" with the endpoint you receive from Formspree -->
-{% for service in site.data.services %}
+{% for service in site.data.secret_services %}
   {% if service.service == "Formspree" %}
     {% assign formspree_endpoint = service.endpoint %}
   {% endif %}
