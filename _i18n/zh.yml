@@ -1,0 +1,12 @@
+home:
+  title: "首页"
+  content: "欢迎来到我们的暖通空调和炉子业务！我们在加拿大萨斯卡通提供专业的暖通空调服务。"
+services:
+  title: "服务"
+  # Add translated content for the Services page
+about:
+  title: "关于我们"
+  # Add translated content for the About Us page
+contact:
+  title: "联系我们"
+  # Add translated content for the Contact page

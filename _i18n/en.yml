@@ -1,0 +1,12 @@
+home:
+  title: "Home"
+  content: "Welcome to our HVAC and Furnace business! We provide professional heating, ventilation, and air conditioning services in Saskatoon, Canada."
+services:
+  title: "Services"
+  # Add translated content for the Services page
+about:
+  title: "About Us"
+  # Add translated content for the About Us page
+contact:
+  title: "Contact"
+  # Add translated content for the Contact page
