@@ -18,12 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Red Ant Heating and Cooling Services
+email: redanthvac@gmail.com
+  
+  # old-description:
+    # Write an awesome description for your new site here. You can edit this
+    # line in _config.yml. It will appear in your document head meta (for
+    # Google search results) and in your feed.xml site description.
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to our HVAC and Furnace business! 
+  We provide professional heating, ventilation, and air conditioning services in Saskatoon, Canada.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
@@ -33,7 +37,34 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-multiple-languages-plugin  # multiple languages plugin
+  - jekyll-environment-variables  # environment variables plugin
+  - jekyll-dotenv  # dotenv plugin
 
+# Configure your languages
+languages: ["en", "zh"]
+default_lang: "en"
+
+# Create custom header_links for navigation
+header_links:
+  en:
+    - title: "Home"
+      url: "/en/"
+    - title: "Services"
+      url: "/en/services"
+    - title: "About"
+      url: "/en/about"
+    - title: "Contact"
+      url: "/en/contact"
+  zh:
+    - title: "首页"
+      url: "/zh/"
+    - title: "服务"
+      url: "/zh/services"
+    - title: "关于我们"
+      url: "/zh/about"
+    - title: "联系我们"
+      url: "/zh/contact"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
