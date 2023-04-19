@@ -4,5 +4,5 @@ _site
 .jekyll-metadata
 vendor
 .env   # Environment variables
-_data/env.yml   # Environment variables
-_data/secret_*.yml
+# _data/env.yml   # Environment variables
+# _data/secret_*.yml
