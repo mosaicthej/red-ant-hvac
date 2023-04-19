@@ -1,5 +1,7 @@
 <header class="site-header">
-
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/slick/slick.css' | relative_url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/slick/slick-theme.css' | relative_url }}" />
+    
     <div class="wrapper">
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
@@ -32,6 +34,27 @@
                 <a class="page-link" href="{{ site.baseurl }}{{ link.url | relative_url }}">{{ link.title | escape }}</a>
               {% endfor %}
             </nav>
+
+            <!-- <link rel="stylesheet" type="text/css" href="{{ '/assets/css/nav.scss' | relative_url }}" />
+            <nav>
+              <ul class="nav-menu">
+                {% for link in site.data.navigation[site.lang] %}
+                  <li class="nav-item">
+                    <a class="page-link" href="{{ site.baseurl }}{{ link.url | relative_url }}">{{ link.title | escape }}</a>
+                    {% if link.subitems %}
+                      <ul class="nav-submenu">
+                        {% for subitem in link.subitems %}
+                          <li class="nav-subitem">
+                            <a class="subitem-link" href="{{ site.baseurl }}{{ subitem.url | relative_url }}">{{ subitem.title | escape }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </nav>
+             -->
           </div>
         </nav>
       {%- endif -%}
