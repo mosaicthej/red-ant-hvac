@@ -29,15 +29,19 @@
               {%- endif -%}
               {%- endfor -%}
             -->
+            {% if !site.lang}
+            {% assign site.lang = site.default_lang %}
+            <div>Language not set!</div>
+            {% endif %}
             
             <nav>
-              {% for link in site.header_links[site.lang] %}
-                <a class="page-link" href="{{ site.baseurl }}{{ link.url | relative_url }}">{{ link.title | escape }}</a>
+              {% for link in site.data.navigation[site.lang] %}
+                <a class="page-link" href="{{ site.baseurl }}/{{ link.url}}">{{ link.title | escape }}</a>
                 {% if link.subitems %}
                   <ul class="sub-menu">
                     {% for subitem in link.subitems %}
                       <li>
-                        <a href="{{ site.baseurl }}{{ subitem.url | relative_url }}">{{ subitem.title | escape }}</a>
+                        <a href="{{ site.baseurl }}/{{ subitem.url}}">{{ subitem.title | escape }}</a>
                       </li>
                     {% endfor %}
                   </ul>
