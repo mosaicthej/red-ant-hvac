@@ -30,12 +30,15 @@
               {%- endfor -%}
             -->
             <nav>
+              site.lang is:
+              {{site.lang}}
+              <br>
+              {{site.data.navigation[site.lang]}]}
               {% for link in site.data.navigation[site.lang] %}
       <!--
               {{site.data.navigation}}
                 <br>
       -->
-                {{site.lang}}
                 <br> 
                 <a class="page-link" href="{{ link.url | relative_url }}">{{ link.title | escape }}</a>
               {% endfor %}
