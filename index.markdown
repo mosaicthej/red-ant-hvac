@@ -6,6 +6,6 @@ lang: en
 redirect_from: /en/
 ---
 
-{% t home.content %}
+<!-- {% t home.content %} -->
 
 <!-- Add more content and information about your business here -->
