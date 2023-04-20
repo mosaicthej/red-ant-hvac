@@ -31,6 +31,10 @@
             -->
             <nav>
               {% for link in site.data.navigation[site.lang] %}
+                {{site.data.navigation}}
+                <br>
+                {{site.lang}}
+                <br>
                 <a class="page-link" href="{{ site.baseurl }}{{ link.url | relative_url }}">{{ link.title | escape }}</a>
               {% endfor %}
             </nav>
