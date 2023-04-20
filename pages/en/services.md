@@ -7,7 +7,7 @@ lang: en
 
 # Our Services
 
-At [Your Business Name], we offer a wide range of HVAC and furnace services to meet the needs of our customers in Saskatoon, Canada. Our certified technicians and gas fitters are experienced in handling various systems and are committed to providing exceptional service.
+At Red Ant Heating and Cooling Services, we offer a wide range of HVAC and furnace services to meet the needs of our customers in Saskatoon, Canada. Our certified technicians and gas fitters are experienced in handling various systems and are committed to providing exceptional service.
 
 ## Air Conditioner Installation and Repair
 

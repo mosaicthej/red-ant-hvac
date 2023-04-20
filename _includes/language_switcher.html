@@ -1,0 +1,8 @@
+<link rel="stylesheet" type="text/css" href="{{ '/assets/css/lang_swt.scss' | relative_url }}" /> 
+<div class="language-switcher">
+  <select id="language-selector">
+    <option value="en" {% if page.lang == 'en' %}selected{% endif %}>English</option>
+    <option value="zh" {% if page.lang == 'zh' %}selected{% endif %}>中文</option>
+  </select>
+</div>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>

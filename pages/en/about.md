@@ -38,4 +38,4 @@ We specialize in the installation, repair, and maintenance of HVAC systems and f
 
 ## Contact Us
 
-If you have any questions about our services or would like to schedule an appointment, please don't hesitate to get in touch with us. You can reach us by phone at [Your Phone Number] or through our [Contact Us](/en/contact/) page. We look forward
+If you have any questions about our services or would like to schedule an appointment, please don't hesitate to get in touch with us. You can reach us by phone at 306-850-2098 or through our [Contact Us](/en/contact/) page. We look forward to hearing from you!
