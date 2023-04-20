@@ -6,5 +6,5 @@ lang: en
 redirect_from: /en/
 ---
 
-default content
+{% include_relative pages/en/home.md %}
 <!-- Add more content and information about your business here -->
