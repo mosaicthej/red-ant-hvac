@@ -32,18 +32,19 @@
             
             <nav>
               {% for link in site.data.navigation[site.lang] %}
-                <a class="page-link" href="{{ site.baseurl }}{{ link.url | relative_url }}">{{ link.title | escape }}</a>
+                <a class="page-link" href="{{ link.url | relative_url }}">{{ link.title | escape }}</a>
                 {% if link.subitems %}
                   <ul class="sub-menu">
                     {% for subitem in link.subitems %}
                       <li>
-                        <a href="{{ site.baseurl }}{{ subitem.url | relative_url }}">{{ subitem.title | escape }}</a>
+                        <a href="{{ subitem.url | relative_url }}">{{ subitem.title | escape }}</a>
                       </li>
                     {% endfor %}
                   </ul>
                 {% endif %}
               {% endfor %}
             </nav>
+            
 
             <!-- <link rel="stylesheet" type="text/css" href="{{ '/assets/css/nav.scss' | relative_url }}" />
             <nav>
