@@ -48,25 +48,27 @@ languages: ["en", "zh"]
 default_lang: "en"
 
 # Create custom header_links for navigation
-header_links:
-  en:
-    - title: "Home"
-      url: "/en/"
-    - title: "Services"
-      url: "/en/services"
-    - title: "About"
-      url: "/en/about"
-    - title: "Contact"
-      url: "/en/contact"
-  zh:
-    - title: "首页"
-      url: "/zh/"
-    - title: "服务"
-      url: "/zh/services"
-    - title: "关于我们"
-      url: "/zh/about"
-    - title: "联系我们"
-      url: "/zh/contact"
+
+# header_links:
+#   en:
+#     - title: "Home"
+#       url: "/en/"
+#     - title: "Services"
+#       url: "/en/services"
+#     - title: "About"
+#       url: "/en/about"
+#     - title: "Contact"
+#       url: "/en/contact"
+#   zh:
+#     - title: "首页"
+#       url: "/zh/"
+#     - title: "服务"
+#       url: "/zh/services"
+#     - title: "关于我们"
+#       url: "/zh/about"
+#     - title: "联系我们"
+#       url: "/zh/contact"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

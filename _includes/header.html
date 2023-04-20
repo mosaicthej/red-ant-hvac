@@ -29,18 +29,19 @@
               {%- endif -%}
               {%- endfor -%}
             -->
+            
             <nav>
-              site.lang is:
-              {{site.lang}}
-              <br>
-              {{site.data.navigation[site.lang]}]}
               {% for link in site.data.navigation[site.lang] %}
-      <!--
-              {{site.data.navigation}}
-                <br>
-      -->
-                <br> 
-                <a class="page-link" href="{{ link.url | relative_url }}">{{ link.title | escape }}</a>
+                <a class="page-link" href="{{ site.baseurl }}{{ link.url | relative_url }}">{{ link.title | escape }}</a>
+                {% if link.subitems %}
+                  <ul class="sub-menu">
+                    {% for subitem in link.subitems %}
+                      <li>
+                        <a href="{{ site.baseurl }}{{ subitem.url | relative_url }}">{{ subitem.title | escape }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
               {% endfor %}
             </nav>
 
